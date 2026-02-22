@@ -111,6 +111,11 @@ A cooldown mechanism prevents repeated alert flooding until the system stabilize
 - Server-side service filtering  
 - Modular React architecture  
 
+ This is how the Frontend looks-
+<img width="1680" height="907" alt="Screenshot 2026-02-21 at 8 55 43 PM" src="https://github.com/user-attachments/assets/27451a0a-3b7d-49ea-a763-bcbbb71fb6ee" />
+<img width="1680" height="907" alt="Screenshot 2026-02-21 at 8 55 43 PM" src="https://github.com/user-attachments/assets/7ce25464-9648-4477-a61b-774b9a5a6c6a" />
+The highlighted sections feature a service-level filtering feature and real-time status & refresh clock:  Users can dynamically select a specific microservice from the dropdown menu to view incidents related only to that service. This filtering is performed server-side via query parameters: `GET /incidents?service=payment-service`. This ensures: reduced data transfer, scalable querying and clean separation of frontend and backend responsibilities. The dashboard includes a live status indicator and timestamp displaying when data was last fetched. This mimics real observability platforms where data recency is critical.
+
 ---
 
 ## Tech Stack
